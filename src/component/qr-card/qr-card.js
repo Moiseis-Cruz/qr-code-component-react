@@ -44,4 +44,4 @@ const Description = styled.p`
     color: #7B879D;
 `
 
-export default QrCode
+export { QrCode }
