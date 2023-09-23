@@ -1,17 +1,47 @@
-import './qr-card.css'
-
 import ImgQrCode from '../img/image-qr-code.png'
+import styled from 'styled-components'
 
 const QrCode = function () {
     return(
-        <div className="card">
-            <img className='qr-code' src={ImgQrCode} alt='QR Code' title='QR Code' />
+        <Card>
+            <Image src={ImgQrCode} />
 
-            <h2 className='title'>Improve your front-end skills by building projects</h2>
+            <Title>Improve your front-end skills by building projects</Title>
 
-            <p className='description'>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-        </div>
+            <Description>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</Description>
+        </Card>
     )
 }
+
+const Card = styled.div`
+    background-color: #fff;
+    width: 315px;
+    height: 484px;
+    border-radius: 15px;
+    font-family: 'Outfit', sans-serif;
+`
+
+const Image = styled.img`
+    width: 280px;
+    height: 280px;
+    margin-top: 18px;
+    border-radius: 15px;
+`
+
+const Title = styled.h2`
+    width: 254px;
+    margin: 9px auto 0;
+    font-size: 22px;
+    font-weight: 600;
+    color: #1F3251;
+`
+
+const Description = styled.p`
+    width: 243px;
+    font-size: 15px;
+    margin: 19px auto 0;
+    font-weight: 400;
+    color: #7B879D;
+`
 
 export default QrCode
