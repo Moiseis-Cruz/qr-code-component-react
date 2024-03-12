@@ -1,11 +1,12 @@
-import './App.css';
 import { QrCode } from './component/qr-card/qr-card';
+import { GlobalStyle, SectionContainer } from './styles/GlobalStyles';
 
 function App() {
   return (
-    <div className="App">
+    <SectionContainer>
+      <GlobalStyle />
       <QrCode />
-    </div>
+    </SectionContainer>
   );
 }
 
